@@ -1,0 +1,257 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RK Fitness Club</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    background:#000;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    color:#ff4c4c;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff4c4c;
+}
+
+/* HERO SECTION */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#ff4c4c,#b30000);
+    animation:fadeIn 2s ease-in-out;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:600px;
+}
+
+/* SECTIONS */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    background:#222;
+    padding:25px;
+    width:280px;
+    border-radius:15px;
+    transition:0.4s ease;
+    transform:translateY(30px);
+    opacity:0;
+    animation:slideUp 1s forwards;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#333;
+}
+
+button{
+    background:#ff4c4c;
+    border:none;
+    padding:10px 18px;
+    color:white;
+    border-radius:8px;
+    margin-top:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1a1a;
+}
+
+/* CONTACT */
+.contact{
+    background:#000;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.contact h3{
+    margin-bottom:15px;
+    color:#ff4c4c;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:15px;
+    text-align:center;
+    font-size:14px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>RK Fitness Club 💪</h1>
+    <nav>
+        <a href="#products">Our Products</a>
+        <a href="#facility">Our Facility</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Transform Your Body. Transform Your Life.</h2>
+    <p>Join RK Fitness Club and build strength, stamina & confidence 🔥</p>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+    <h2>Our Products</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Whey Protein</h3>
+            <p>Premium protein for muscle growth & faster recovery.</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Mass Gainer</h3>
+            <p>High calorie formula for healthy weight gain.</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Gym Accessories</h3>
+            <p>Gloves, belts, resistance bands & more.</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- FACILITY -->
+<section id="facility" class="section">
+    <h2>Our Facility</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Modern Equipment</h3>
+            <p>Latest cardio & strength machines available.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certified Trainers</h3>
+            <p>Professional trainers for personal guidance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Spacious Workout Area</h3>
+            <p>Clean, hygienic & fully air-conditioned gym.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h3>Contact Us 📞</h3>
+    <p>Call Now: <strong>9216484050</strong></p>
+    <p>Stay Fit. Stay Strong. 💥</p>
+</section>
+
+<footer>
+    © 2026 RK Fitness Club | Designed with Power 🔥
+</footer>
+
+</body>
+</html>
